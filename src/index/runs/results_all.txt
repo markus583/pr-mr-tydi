@@ -1,0 +1,44 @@
+############# arabic #############
+Results:
+recip_rank            	all	0.3687
+recall_100            	all	0.7928
+############# bengali #############
+Results:
+recip_rank            	all	0.4184
+recall_100            	all	0.8694
+############# english #############
+Results:
+recip_rank            	all	0.1412
+recall_100            	all	0.5365
+############# finnish #############
+Results:
+recip_rank            	all	0.2842
+recall_100            	all	0.7196
+############# indonesian #############
+Results:
+recip_rank            	all	0.3765
+recall_100            	all	0.8426
+############# japanese #############
+Results:
+recip_rank            	all	0.2134
+recall_100            	all	0.6431
+############# korean #############
+Results:
+recip_rank            	all	0.2855
+recall_100            	all	0.6188
+############# russian #############
+Results:
+recip_rank            	all	0.3169
+recall_100            	all	0.6541
+############# swahili #############
+Results:
+recip_rank            	all	0.3896
+recall_100            	all	0.7642
+############# telugu #############
+Results:
+recip_rank            	all	0.3441
+recall_100            	all	0.7577
+############# thai #############
+Results:
+recip_rank            	all	0.4016
+recall_100            	all	0.8529

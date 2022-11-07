@@ -1,0 +1,1 @@
+run.bm25.finnish.k1_1.0.b_0.2.dev.txt: recall@100 = 0.8354Results:recip_rank            	all	0.2837recall_100            	all	0.7236

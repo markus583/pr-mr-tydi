@@ -1,0 +1,1 @@
+run.bm25.english.k1_1.3.b_0.4.dev.txt: mrr@100 = 0.1765Results:recip_rank            	all	0.1506recall_100            	all	0.5513

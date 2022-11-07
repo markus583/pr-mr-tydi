@@ -1,0 +1,1 @@
+run.bm25.arabic.k1_1.2000000000000002.b_0.30000000000000004.dev.txt: recall@100 = 0.7955Results:recip_rank            	all	0.3642recall_100            	all	0.7963

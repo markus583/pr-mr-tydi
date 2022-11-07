@@ -1,0 +1,1 @@
+run.bm25.bengali.k1_1.2.b_0.3.dev.txt: mrr@100 = 0.346Results:recip_rank            	all	0.4130recall_100            	all	0.8739

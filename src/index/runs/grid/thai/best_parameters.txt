@@ -1,0 +1,1 @@
+run.bm25.thai.k1_1.1.b_0.4.dev.txt: recall@100 = 0.861Results:recip_rank            	all	0.3967recall_100            	all	0.8571

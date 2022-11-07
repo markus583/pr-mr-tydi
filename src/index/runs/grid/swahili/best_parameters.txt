@@ -1,0 +1,1 @@
+run.bm25.swahili.k1_1.0.b_0.5.dev.txt: recall@100 = 0.5865Results:recip_rank            	all	0.3834recall_100            	all	0.7649

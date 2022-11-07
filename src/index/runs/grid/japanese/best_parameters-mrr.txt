@@ -1,0 +1,1 @@
+run.bm25.japanese.k1_0.7.b_0.2.dev.txt: mrr@100 = 0.2387Results:recip_rank            	all	0.2203recall_100            	all	0.6613

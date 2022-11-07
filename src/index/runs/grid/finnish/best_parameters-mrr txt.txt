@@ -1,0 +1,1 @@
+run.bm25.finnish.k1_1.0.b_0.3.dev.txt: mrr@100 = 0.4148Results:recip_rank            	all	0.2873recall_100            	all	0.7251

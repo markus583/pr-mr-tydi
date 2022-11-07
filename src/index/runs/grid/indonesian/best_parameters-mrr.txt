@@ -1,0 +1,1 @@
+run.bm25.indonesian.k1_0.8.b_0.3.dev.txt: mrr@100 = 0.2984Results:recip_rank            	all	0.3824recall_100            	all	0.8462

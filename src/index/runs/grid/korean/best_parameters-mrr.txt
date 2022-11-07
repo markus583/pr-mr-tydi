@@ -1,0 +1,1 @@
+run.bm25.korean.k1_0.9.b_0.3.dev.txt: mrr@100 = 0.2939Results:recip_rank            	all	0.2808recall_100            	all	0.6211
