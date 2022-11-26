@@ -7,7 +7,7 @@ languages2=('ar' 'bn' 'en' 'fi' 'id' 'ja' 'ko' 'ru' 'sw' 'te' 'th')
 # all languages and their abbreviations
 for lang in "${!languages[@]}"; do
   collection_dir=../../data/mrtydi-v1.1-${languages[$lang]}/collection
-  index_dir=indexes/${!languages2[$lang]}
+  index_dir=indexes/${languages2[$lang]}
   mkdir -p "${index_dir}"
   python -m pyserini.index.lucene  \
     -collection JsonCollection \

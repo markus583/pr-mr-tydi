@@ -15,7 +15,7 @@ PROCESSOR_INFO = {
     'json': [None, None, None]
 }
 
-# TODO
+
 class HFTrainDataset:
     def __init__(self, tokenizer: PreTrainedTokenizer, data_args: DataArguments, cache_dir: str):
         data_files = data_args.train_path
@@ -41,11 +41,11 @@ class HFTrainDataset:
                 batched=False,
                 num_proc=self.proc_num,
                 remove_columns=self.dataset.column_names,
-                desc="Running tokenizer on training dataset",
+                desc="Running tokenizer on train dataset",
             )
         return self.dataset
 
-# TODO
+
 class HFQueryDataset:
     def __init__(self, tokenizer: PreTrainedTokenizer, data_args: DataArguments, cache_dir: str):
         data_files = data_args.encode_in_path
@@ -72,7 +72,7 @@ class HFQueryDataset:
             )
         return self.dataset
 
-# TODO
+
 class HFCorpusDataset:
     def __init__(self, tokenizer: PreTrainedTokenizer, data_args: DataArguments, cache_dir: str):
         data_files = data_args.encode_in_path

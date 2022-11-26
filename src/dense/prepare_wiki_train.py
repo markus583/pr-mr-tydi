@@ -15,9 +15,9 @@ from tqdm import tqdm
 
 args = {
     "input": "/home/markus_frohmann/biencoder-nq-train.json",
-    "output": "/home/markus_frohmann/nq-train/bm25.mbert.json",
+    "output": "/home/markus_frohmann/nq-train/bm25.mbert_8.json",
     "tokenizer": "bert-base-multilingual-cased",
-    "minimum_negatives": 1
+    "minimum_negatives": 8
 }
 args = argparse.Namespace(**args)
 

@@ -2,11 +2,11 @@
 import sys
 
 script = "tevatron.driver.train \
-  --output_dir model_mdpr_3 \
+  --output_dir models/model_mdpr_3 \
   --model_name_or_path bert-base-multilingual-cased \
-  --save_steps 1000 \
+  --save_steps 20000 \
   --dataset_name Tevatron/wikipedia-nq \
-  --per_device_train_batch_size 128 \
+  --per_device_train_batch_size 32 \
   --positive_passage_no_shuffle \
   --train_n_passages 2 \
   --learning_rate 1e-5 \

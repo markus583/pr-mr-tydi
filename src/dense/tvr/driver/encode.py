@@ -123,7 +123,8 @@ def main():
     encoded = np.concatenate(encoded)
 
     with open(data_args.encoded_save_path, "wb") as f:
-        pickle.dump((encoded, lookup_indices), f)
+        # TODO: protocol
+        pickle.dump((encoded, lookup_indices), f, protocol=5)
 
 
 if __name__ == "__main__":
