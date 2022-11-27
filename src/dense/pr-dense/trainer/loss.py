@@ -2,6 +2,7 @@ import torch
 from torch import Tensor
 from torch.nn import functional as F
 
+
 class SimpleContrastiveLoss:
     """
     In the original DPR paper, the loss is computed as follows:
@@ -9,6 +10,7 @@ class SimpleContrastiveLoss:
     - the negatives are all the other passages, both from the same query and from other queries
     --> ALL BM25 negatives + ALL in-batch negatives (as in the original DPR paper)
     """
+
     def __call__(
         self, x: Tensor, y: Tensor, target: Tensor = None, reduction: str = "mean"
     ):

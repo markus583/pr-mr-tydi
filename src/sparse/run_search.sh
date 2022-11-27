@@ -7,7 +7,7 @@ runfile=runs/run.bm25.mrtydi-v1.1-${lang}.${set_name}.txt
 qrels=../../data/mrtydi-v1.1-${lang}/qrels.${set_name}.txt
 
 python -m pyserini.search.lucene \
-  --index indexes/${lang} \
+  --index indices/${lang} \
   --topics ../../data/mrtydi-v1.1-${lang}/topic.${set_name}.tsv \
   --output ${runfile} \
   --bm25 \

@@ -2,7 +2,7 @@
 import sys
 
 script = "tevatron.driver.train \
-  --output_dir models/model_mdpr_3 \
+  --output_dir ../../models/model_mdpr_3 \
   --model_name_or_path bert-base-multilingual-cased \
   --save_steps 20000 \
   --dataset_name Tevatron/wikipedia-nq \

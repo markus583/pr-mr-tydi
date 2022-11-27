@@ -2,10 +2,10 @@
 import sys
 
 script = "pr-dense.training.train \
-  --output_dir /home/gcloud-pr-1/models/model_untied-30-plen-256/ \
+  --output_dir ../../models/model_untied-30-plen-256/ \
   --model_name_or_path bert-base-multilingual-cased \
   --save_steps 20000 \
-  --train_dir /home/markus_frohmann/nq-train/bm25.mbert_8.json \
+  --train_dir ../../data/nq-train/bm25.mbert_8.json \
   --per_device_train_batch_size 128 \
   --positive_passage_no_shuffle \
   --learning_rate 1e-5 \

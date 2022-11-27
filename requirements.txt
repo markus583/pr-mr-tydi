@@ -1,0 +1,7 @@
+pyserini
+transformer==4.20.1
+datasets==2.3.2
+torch
+faiss-cpu
+tqdm~=4.64.1
+pandas~=1.5.1

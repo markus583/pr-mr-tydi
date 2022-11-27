@@ -23,7 +23,7 @@ elif language == "indonesian":
 else:
     language_abbr = language[:2]
     
-index = f"indexes/{language}"
+index = f"indices/{language}"
 qrels = f"../../data/mrtydi-v1.1-{language}/qrels.{set_name}.txt"
 topics = f"../../data/mrtydi-v1.1-{language}/topic.{set_name}.tsv"
 base_directory = args.base_directory
@@ -71,22 +71,22 @@ for filename in sorted(os.listdir(base_directory)):
         '-m',
         'pyserini.eval.trec_eval',
         '-c',
-        '-mrecall.100',
+        '-mrecip_rank',
         qrels,
         f'{base_directory}/{filename}'
     ])
-    recall = results.decode('utf-8').split("0.")[-1].strip()
-    recall = float(f"0.{recall}")
-    print("recall:", recall)
+    mrr = results.decode('utf-8').split("0.")[-1].strip()
+    mrr = float(f"0.{mrr}")
+    print("mrr:", mrr)
 
-    if recall > max_score:
-        max_score = recall
+    if mrr > max_score:
+        max_score = mrr
         max_file = filename
 
-print(f'\n\nBest parameters: {max_file}: recall@100 = {max_score}')
+print(f'\n\nBest parameters: {max_file}: mrr = {max_score}')
 # save to file
-with open(f'{base_directory}/best_parameters.txt', 'w') as f:
-    f.write(f'{max_file}: recall@100 = {max_score}')
+with open(f'{base_directory}/best_parameters-mrr.txt', 'w') as f:
+    f.write(f'{max_file}: mrr@100 = {max_score}')
     # get k1 and b
     k1 = re.search("k1_(.*?).b", max_file)[1]
     b = re.search("b_(.*?).txt", max_file)[1]

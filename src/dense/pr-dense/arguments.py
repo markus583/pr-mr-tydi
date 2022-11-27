@@ -26,7 +26,10 @@ class ModelArguments:
     )
 
     tokenizer_name: Optional[str] = field(
-        default=None, metadata={"help": "Pretrained tokenizer name or path if not the same as model_name"}
+        default=None,
+        metadata={
+            "help": "Pretrained tokenizer name or path if not the same as model_name"
+        },
     )
 
     # modeling
@@ -85,9 +88,7 @@ class DataArguments:
     )
     data_cache_dir: Optional[str] = field(
         default=None,
-        metadata={
-            "help": "Where to store the data downloaded from HF"
-        },
+        metadata={"help": "Where to store the data downloaded from HF"},
     )
 
     # TODO
@@ -125,5 +126,9 @@ class CustomTrainingArguments(TrainingArguments):
     grad_cache: bool = field(
         default=True, metadata={"help": "Whether to use gradient cache updates"}
     )
-    gc_q_chunk_size: int = field(default=4, metadata={"help": "Gradient cache chunk size for queries"})
-    gc_p_chunk_size: int = field(default=32, metadata={"help": "Gradient cache chunk size for passages"})
+    gc_q_chunk_size: int = field(
+        default=4, metadata={"help": "Gradient cache chunk size for queries"}
+    )
+    gc_p_chunk_size: int = field(
+        default=32, metadata={"help": "Gradient cache chunk size for passages"}
+    )

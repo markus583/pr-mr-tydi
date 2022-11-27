@@ -33,6 +33,7 @@ class EncoderOutput(ModelOutput):
         returned when :obj:`labels` is provided):
             Classification (or regression if config.num_labels==1) scores (before SoftMax).
     """
+
     q_reps: Optional[Tensor] = None
     p_reps: Optional[Tensor] = None
     loss: Optional[Tensor] = None
@@ -116,8 +117,6 @@ class EncoderModel(nn.Module):
             p_reps=p_reps,
         )
 
-
-
     def encode_passage(self, psg):
         raise NotImplementedError("EncoderModel is abstract class!")
 
@@ -134,7 +133,7 @@ class EncoderModel(nn.Module):
         return self.cross_entropy(scores, target)
 
     @staticmethod
-    def compute_similarity(q_reps : Tensor, p_reps : Tensor) -> Tensor:
+    def compute_similarity(q_reps: Tensor, p_reps: Tensor) -> Tensor:
         """
         Compute similarity between query and passage representations
         :param q_reps: query representations
@@ -158,10 +157,12 @@ class EncoderModel(nn.Module):
         else:
             self.lm_q.save_pretrained(output_dir)
 
+
 class DenseModel(EncoderModel):
     """
     Dense encoder model
     """
+
     def encode_passage(self, psg: Dict[str, Tensor] = None) -> Union[Tensor, None]:
         """
         Encode passage

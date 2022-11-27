@@ -61,6 +61,7 @@ class CustomTrainer(Trainer):
             else:
                 prepared.append(super()._prepare_inputs(x))
         return prepared
+
     def get_train_dataloader(self) -> DataLoader:
         """
         Get the training dataloader.
@@ -150,7 +151,11 @@ class GradCacheTrainer(CustomTrainer):
             scaler=self.scaler if self.args.fp16 else None,
         )
 
-    def training_step(self, model: torch.nn.Module, inputs: Tuple[Dict[str, Union[torch.Tensor, Any]], ...]) -> float:
+    def training_step(
+        self,
+        model: torch.nn.Module,
+        inputs: Tuple[Dict[str, Union[torch.Tensor, Any]], ...],
+    ) -> float:
         """
         Perform a training step.
         :param model: The model to perform the training step for.
