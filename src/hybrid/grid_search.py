@@ -37,7 +37,7 @@ print(f"bm25_runfile: {bm25_runfile}")
 print(f"qrels: {qrels}")
 
 
-for alpha in np.arange(0.700, 1.01, 0.01):
+for alpha in np.arange(0.0, 1, 0.01):
     alpha = str(alpha)[:5]
     if alpha[-1] == 0:
         alpha = alpha[:-1]
