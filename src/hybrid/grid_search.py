@@ -109,8 +109,8 @@ with open(f"{output_directory}/best_parameters-mrr.txt", "w") as f:
     alpha = max_file.split("_")[1].split(f".{set_name}")[0]
     print(alpha)
 
-    test_dense_runfile = f"../../runs/run.mdpr.mrtydi-v1.1-{language}.test.txt"
-    test_bm25_runfile = f"../../runs/run.bm25.mrtydi-v1.1-{language}.test.txt"
+    test_dense_runfile = f"../../runs/dense/run.mdpr.mrtydi-v1.1-{language}.test.txt"
+    test_bm25_runfile = f"../../runs/sparse/run.bm25.mrtydi-v1.1-{language}.test.txt"
     test_output_directory = f"../../runs/hybrid/{language}/run.alpha_{alpha}.test.txt"
     subprocess.call(
         f"python hybrid.py --lang {language} --sparse {test_bm25_runfile} --dense {test_dense_runfile} --alpha {alpha}"
