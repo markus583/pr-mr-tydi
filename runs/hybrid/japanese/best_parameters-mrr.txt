@@ -1,0 +1,5 @@
+run.alpha_0.970.dev.txt: mrr@100 = 0.3837
+alpha: 0.970
+japanese - TEST SET Results:
+recip_rank            	all	0.3793
+recall_100            	all	0.8157
