@@ -1,92 +1,45 @@
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-telugu
-----------------
-swahili
-----------------
-telugu
-----------------
-telugu
-----------------
-swahili
-----------------
-thai
-----------------
-thai
-----------------
-recip_rank            	all	0.1567
-recall_100            	all	0.4766
-indonesian
-----------------
-/root/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
-Skipping download.
-korean
-----------------
-recip_rank            	all	0.2206
-recall_100            	all	0.5424
-arabic
-----------------
-recip_rank            	all	0.2666
-recall_100            	all	0.6580
-finnish
-----------------
-recip_rank            	all	0.2117
-recall_100            	all	0.6066
-japanese
-----------------
-/root/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
-Skipping download.
-thai
-----------------
-recip_rank            	all	0.1567
-recall_100            	all	0.4766
-indonesian
-----------------
-bengali
-----------------
-recip_rank            	all	0.2861
-recall_100            	all	0.7162
-indonesian
-----------------
-recip_rank            	all	0.3092
-recall_100            	all	0.7425
+30 EPOCHS, p_len=256
+--------------------
+BENGALI:
+recip_rank              all     0.2861
+recall_100              all     0.7162
+
+SWAHILI:
+recip_rank              all     0.1934
+recall_100              all     0.4918
+
+THAI:
+recip_rank              all     0.1567
+recall_100              all     0.4766
+
+TELUGU:
+recip_rank              all     0.1056
+recall_100              all     0.3870
+
+KOREAN:
+recip_rank              all     0.2206
+recall_100              all     0.5424
+
+INDONESIAN:
+recip_rank              all     0.3092
+recall_100              all     0.7425
+
+FINNISH:
+recip_rank              all     0.2117
+recall_100              all     0.6066
+
+ARABIC:
+recip_rank              all     0.2666
+recall_100              all     0.6580
+
+JAPANESE:
+recip_rank              all   0.2413
+recall_100              all	   0.6319
+
+RUSSIAN:
+recip_rank              all     0.2839
+recall_100              all     0.6621
+
+ENGLISH:
+recip_rank              all     0.2750
+recall_100              all     0.7173
